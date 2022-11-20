@@ -1,6 +1,6 @@
 import { ThemeProvider } from "styled-components";
 import GlobalStyles from "./styles/GlobalStyles";
-import {light} from './styles/Themes'
+import {light,dark} from './styles/Themes'
 
 
 import Navigation from "./components/Navigation";
@@ -11,6 +11,7 @@ import Roadmap from './components/sections/Roadmap'
 import Showcase from './components/sections/Showcase'
 import Team from './components/sections/Team'
 import Footer from "./components/footer/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
       <Team />
       <Faq />
       <Footer />
+      <ScrollToTop />
     </ThemeProvider>
     </>
   );

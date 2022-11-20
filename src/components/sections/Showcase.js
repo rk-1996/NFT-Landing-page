@@ -113,7 +113,7 @@ const NftItems = ({img,number =0 ,price = 0,passRef}) => {
 			<img src={img} alt="the Weirdo"/>
 			<Details>
 				<div>
-					<span>Weirdos</span> <br />
+					<span>Club member</span> <br />
 					<h1>#{number}</h1>
 				</div>
 
@@ -138,7 +138,7 @@ const Showcase = () => {
 	const Row1Ref = useRef(null);
 	const Row2Ref = useRef(null);
     return (
-			<Section>
+			<Section id='showcase'>
 				<Row direction='none' ref={Row1Ref}>
 					<NftItems img={img1} number={852} price={1} passRef={Row1Ref}/>
 					<NftItems img={img2} number={123} price={1.2} passRef={Row1Ref}/>
